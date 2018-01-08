@@ -1,0 +1,19 @@
+{
+  "name": "umi-example",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "zhang740@vmzclub.com",
+  "license": "MIT",
+  "devDependencies": {
+    "rc-form": "^2.1.7",
+    "umi": "^1.0.0-0"
+  },
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build"
+  },
+  "dependencies": {
+    "dva-no-router": "^1.0.3"
+  }
+}
