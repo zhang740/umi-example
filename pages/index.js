@@ -9,9 +9,16 @@ const Item = List.Item;
 const Brief = Item.Brief;
 const myImg = src => <img src={`https://gw.alipayobjects.com/zos/rmsportal/${src}.svg`} className="am-icon am-icon-xs" alt="" />;
 
-export class Index extends Component {
+@createForm()
+export default class extends Component {
   state = {
     PopVis: false,
+  }
+
+  constructor(props) {
+    super(props, {
+      title: '首页',
+    });
   }
 
   customModal = () => {
@@ -144,5 +151,3 @@ export class Index extends Component {
     );
   }
 }
-
-export default createForm()(Index);

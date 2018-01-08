@@ -6,14 +6,11 @@
   "author": "zhang740@vmzclub.com",
   "license": "MIT",
   "devDependencies": {
-    "rc-form": "^2.1.7",
-    "umi": "^1.0.0-0"
+    "axios": "^0.17.1",
+    "rc-form": "^2.1.7"
   },
   "scripts": {
     "start": "umi dev",
     "build": "umi build"
-  },
-  "dependencies": {
-    "dva-no-router": "^1.0.3"
   }
 }
