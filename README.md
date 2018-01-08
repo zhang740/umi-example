@@ -5,7 +5,6 @@
 Install dependencies.
 
 ```bash
-$ npm i -g umi
 $ npm i
 ```
 

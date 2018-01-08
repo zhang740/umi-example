@@ -5,9 +5,10 @@
   "main": "index.js",
   "author": "zhang740@vmzclub.com",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.17.1",
-    "rc-form": "^2.1.7"
+    "rc-form": "^2.1.7",
+    "umi": "^1.0.0-0"
   },
   "scripts": {
     "start": "umi dev",
