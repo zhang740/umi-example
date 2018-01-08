@@ -1,0 +1,10 @@
+{
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "extraBabelIncludes": [
+    "node_modules/af-webpack/lib",
+    "node_modules/umi-build-dev"
+  ]
+}
