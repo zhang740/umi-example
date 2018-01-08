@@ -11,9 +11,8 @@ export class Component extends React.PureComponent {
 
   componentWillMount() {
     // init
+    // http拦截器等
   }
 
   // 公共方法
-
-  // http拦截器等
 }
