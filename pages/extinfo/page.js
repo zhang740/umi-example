@@ -20,6 +20,7 @@ export default class extends Component {
         <div className={styles.back}>
           <Button onClick={() => router.goBack()}>返回</Button>
         </div>
+        <div className={styles.hd}>高清方案</div>
       </div>
     );
   }

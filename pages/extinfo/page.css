@@ -6,3 +6,11 @@
   width: 60px;
   height: 60px;
 }
+
+.hd {
+  border: 1px solid red;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px;
+  text-align: center;
+}
