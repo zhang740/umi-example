@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './base.css';
 
 export class Component extends React.PureComponent {
 

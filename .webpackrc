@@ -5,6 +5,9 @@
   ],
   "extraBabelIncludes": [
     "node_modules/af-webpack/lib",
-    "node_modules/umi-build-dev"
-  ]
+    "node_modules/umi-build-dev",
+    "node_modules/af-webpack/node_modules"
+  ],
+  "sass": {},
+  "theme": {}
 }
