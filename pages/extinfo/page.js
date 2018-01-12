@@ -6,6 +6,13 @@ import styles from './page.css';
 const myImg = src => <img src={src} className={`am-icon am-icon-md ${styles.img}`} alt="" />;
 
 export default class extends Component {
+
+  constructor(props) {
+    super(props, {
+      title: '扩展信息',
+    });
+  }
+
   render() {
     const { location } = this.props;
     console.log(location.query);

@@ -8,6 +8,7 @@ export class Component extends React.PureComponent {
     super(props);
 
     // meta 处理
+    document.title = meta.title
   }
 
   componentWillMount() {
