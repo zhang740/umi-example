@@ -8,7 +8,8 @@
   "dependencies": {
     "axios": "^0.17.1",
     "rc-form": "^2.1.7",
-    "umi": "^1.0.0-0"
+    "umi": "^1.0.0-0",
+    "@babel/polyfill": "^7.0.0-beta.38"
   },
   "scripts": {
     "start": "umi dev",

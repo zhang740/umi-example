@@ -1,7 +1,8 @@
 {
   "browserslist": [
     "> 1%",
-    "last 2 versions"
+    "last 2 versions",
+    "iOS >= 8"
   ],
   "extraBabelIncludes": [
     "node_modules/af-webpack/lib",
