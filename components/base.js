@@ -22,6 +22,7 @@ export class Component extends React.PureComponent {
     if (meta && meta.title) {
       document.title = meta.title;
     }
+    console.log('componentDidMount', this.meta)
   }
 
   // 公共方法

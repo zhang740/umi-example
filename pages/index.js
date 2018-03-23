@@ -1,9 +1,17 @@
 import router from 'umi/router';
 import { Component } from '../components/base';
-import { Button, Popover, List, Modal, WhiteSpace, Toast, Picker, InputItem } from 'antd-mobile';
+import {
+  Button, Popover, List, Modal, WhiteSpace, Toast, Picker, InputItem,
+  DatePicker,
+} from 'antd-mobile';
 import Link from 'umi/link';
 import { createForm } from 'rc-form';
 import styles from './index.css';
+
+
+router.listen(() => {
+  console.log('router.listen')
+})
 
 const Item = List.Item;
 const Brief = Item.Brief;
@@ -104,12 +112,25 @@ export default class extends Component {
       <div>
         {this.renderPop()}
         <List>
-          <Link to="/extinfo"><Item>链接跳转</Item></Link>
+          <Link to={{
+            pathname: '/extinfo',
+            search: '?test=123',
+          }}><Item>链接跳转</Item></Link>
           <Item arrow="horizontal" onClick={() => this.setState({ PopVis: true })}>弹出Popover</Item>
           <Item extra="扩展信息" arrow="horizontal" onClick={this.gotoExtInfoPage}>路由跳转</Item>
         </List>
         <WhiteSpace />
         <List>
+          <DatePicker
+            mode="year"
+            value={this.state.date}
+            minDate={new Date('2015-01-01')}
+            maxDate={new Date('2020-01-01')}
+            onChange={date => this.setState({ date })}
+            format={(date) => (new Date(date).getFullYear() + '年')}
+          >
+            <List.Item arrow="horizontal">Datetime</List.Item>
+          </DatePicker>
           <Item onClick={this.customModal}>弹出对话框</Item>
           <Item onClick={this.inputModal}>输入对话框</Item>
           <Item extra="扩展信息" align="top" multipleLine>

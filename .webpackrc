@@ -10,5 +10,14 @@
     "node_modules/af-webpack/node_modules"
   ],
   "sass": {},
+  "proxy": {
+    "/api": {
+      "target": "http://localhost:8000/",
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  },
   "theme": {}
 }
